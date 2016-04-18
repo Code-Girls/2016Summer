@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>暑假编程营招生</title>
+  <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="bower_components/fullpage.js/dist/jquery.fullpage.min.css" rel="stylesheet">
+  <style>
+    /* http://codepen.io/dodozhang21/pen/siKtp */
+
+    @-moz-keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        -moz-transform: translateY(0);
+        transform: translateY(0);
+      }
+      40% {
+        -moz-transform: translateY(-30px);
+        transform: translateY(-30px);
+      }
+      60% {
+        -moz-transform: translateY(-15px);
+        transform: translateY(-15px);
+      }
+    }
+    @-webkit-keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+      }
+      40% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+      }
+      60% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+      }
+    }
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+      }
+      40% {
+        -moz-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+      }
+      60% {
+        -moz-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+      }
+    }
+    body {
+      background: black;
+    }
+
+    .arrow {
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      margin-left: -20px;
+      width: 40px;
+      height: 40px;
+      background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyICBsMTg5Ljk5OS0xOTBjMjAuMTc4LTIwLjE3OCw1My4xNjQtMTkuOTEzLDczLjY3MiwwLjU5NWwwLDBjMjAuNTA4LDIwLjUwOSwyMC43NzIsNTMuNDkyLDAuNTk1LDczLjY3MUwyOTMuNzUxLDQ1NS44Njh6Ii8+DQo8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjIwLjI0OSw0NTUuODY4YzIwLjE4LDIwLjE3OSw1My4xNjQsMTkuOTEzLDczLjY3Mi0wLjU5NWwwLDBjMjAuNTA5LTIwLjUwOCwyMC43NzQtNTMuNDkzLDAuNTk2LTczLjY3MiAgbC0xOTAtMTkwYy0yMC4xNzgtMjAuMTc4LTUzLjE2NC0xOS45MTMtNzMuNjcxLDAuNTk1bDAsMGMtMjAuNTA4LDIwLjUwOS0yMC43NzIsNTMuNDkyLTAuNTk1LDczLjY3MUwyMjAuMjQ5LDQ1NS44Njh6Ii8+DQo8L3N2Zz4=);
+      background-size: contain;
+    }
+
+    .bounce {
+      -moz-animation: bounce 2s infinite;
+      -webkit-animation: bounce 2s infinite;
+      animation: bounce 2s infinite;
+    }
+  </style>
+
+  <style>
+    .slide-subtitle {
+      padding: 0 30px;
+    }
+
+    .slide-text-block {
+      padding-right: 30px;
+    }
+
+    .task-list {
+      list-style-type: none;
+      padding-left: 15px;
+      padding-right: 30px;
+    }
+  </style>
+  </head>
+  <body>
+    <div id="fullpage">
+      <div class="section">
+        <h1 class="text-center">七天</h1>
+        <h1 class="text-center">学一门编程语言</h1>
+        <h1 class="text-center">抱一个页游回家</h1>
+        <div class="arrow bounce"></div>
+      </div>
+      <div class="section">
+        <div class="slide">
+          <h3 class="text-center slide-subtitle">说到编程，你是不是觉得程序员这么写程序特别酷炫？</h3>
+          <div class="text-center">
+            <img src="https://cloud.githubusercontent.com/assets/1462400/14516445/e3608374-01d0-11e6-89d8-d3e2de297836.gif" width=250 />
+          </div>
+        </div>
+        <div class="slide">
+          <h4 class="text-center slide-subtitle">写出来的代码都长这个样子？</h4>
+          <div class="text-center">
+            <img src="https://cloud.githubusercontent.com/assets/1462400/14516451/e8e355ba-01d0-11e6-8978-86985759b909.png" width=250 />
+          </div>
+        </div>
+        <div class="slide">
+          <h3 class="text-center slide-subtitle">可是编程书长这个样子 T T</h3>
+          <div class="text-center">
+            <img src="https://cloud.githubusercontent.com/assets/1462400/14516610/d056c106-01d2-11e6-9724-c8698878d7f4.png" width=250 />
+          </div>
+          <p class="text-center">编程好酷啊，可是怎么可能学的会嘛。。。</p>
+        </div>
+      </div>
+      <div class="section container-fluid">
+        <h3 class="text-center">这就是为什么你要来参加我们的编程夏令营！</h3>
+        <p>7天之前，也许你是编程小白，或者是受够了高中老师枯燥的照本宣科，厌烦了学校布置的用Visual Basic语言写一个计算器这种无聊的程序。7天后，你将拥有以下技能：</p>
+
+        <ul class="task-list">
+          <li class="task-list-item">
+            <input type="checkbox" class="task-list-item-checkbox" checked disabled>
+            掌握一门编程语言
+          </li>
+          <li class="task-list-item">
+            <input type="checkbox" class="task-list-item-checkbox" checked disabled>
+            拥有继续自学编程的能力
+          </li>
+          <li class="task-list-item">
+            <input type="checkbox" class="task-list-item-checkbox" checked disabled>
+            知道Java和Javascript有什么区别
+          </li>
+          <li class="task-list-item">
+            <input type="checkbox" class="task-list-item-checkbox" checked disabled>
+            能用二进制、八进制、十六进制进行运算。还会知道为什么对于程序员来说，万圣节和圣诞节是同一天
+          </li>
+          <li class="task-list-item">
+            <input type="checkbox" class="task-list-item-checkbox" checked disabled>
+            明白我们在浏览器输入一个网址到网页呈现在我们面前这段时间，到底发生了什么
+          </li>
+          <li class="task-list-item">........... </li>
+          <li class="task-list-item">
+            <input type="checkbox" class="task-list-item-checkbox" checked disabled>
+            各种关于计算机的知识
+          </li>
+          <li class="task-list-item">........... </li>
+
+          <li class="task-list-item">
+            <input type="checkbox" class="task-list-item-checkbox" checked disabled>
+            当然，你还可以拥有一款自行设计编写的网页游戏！
+            想让国外大学的Admission Officer对你的申请留下深刻印象么？
+            想让同学老师对你刮目相看么？或者是想找一份好的实习？这个网页游戏一定可以帮到你
+          </li>
+        </ul>
+      </div>
+      <div class="section">
+        <div class="slide container-fluid">
+          <h2 class="text-center slide-subtitle">夏令营的教程</h2>
+          <p class="slide-text-block">
+            我们将会通过制作HTML5游戏学习编程。
+            老师和助教们会以互动的形式给大家介绍编程的基础知识，
+            带领大家用HTML5技术制作疯传一时的游戏Flappy Bird。
+          </p>
+          <p class="slide-text-block">
+            我们每天都安排了各种各样的编程挑战，
+            烧脑是不够的，还需要烧出足够大的脑洞！
+            在学习完基础知识之后，学员将组队搭建属于自己的网页游戏。
+          </p>
+        </div>
+        <div class="slide container-fluid">
+          <p class="slide-text-block">
+            Simon老师此前就做过一个Flappy Bird的克隆版Clappy Bird，用击掌的声音来控制小鸟。
+            希望学员们在夏令营结束之后制作出脑洞更大的游戏，超过Simon老师。
+          </p>
+
+          <iframe height=500 width=350 src="http://player.youku.com/embed/XMTUyOTQ1MTA0OA==" frameborder=0 allowfullscreen></iframe>
+        </div>
+        <div class="slide container-fluid">
+          <h3 class="text-center slide-subtitle">游戏界面</h3>
+          <div class="text-center">
+            <img src="https://cloud.githubusercontent.com/assets/1462400/14412670/ab3b0642-ff35-11e5-8d1b-4d2577e5960a.png" width=250 />
+          </div>
+        </div>
+        <div class="slide container-fluid">
+          <h3 class="text-center slide-subtitle">游戏界面</h3>
+          <div class="text-center">
+            <img src="https://cloud.githubusercontent.com/assets/1462400/14412671/ab3dccba-ff35-11e5-9b83-8c25797a00f8.png" width=250 />
+          </div>
+        </div>
+        <div class="slide container-fluid">
+          <h3 class="text-center slide-subtitle">游戏界面</h3>
+          <div class="text-center">
+            <img src="https://cloud.githubusercontent.com/assets/1462400/14412672/ab401de4-ff35-11e5-8d7b-739b5879d268.png" width=250 />
+          </div>
+        </div>
+      </div>
+      <div class="section container-fluid">
+        <h2>活动时间：</h2>
+        <p>2016年8月1-7日</p>
+        <h2>7天怎么过：</h2>
+        <p class="slide-text-block">
+          前三天是编程基础学习，每天都有烧脑又geek的技术对话，还有许多编程难题等着大家挑战。
+          每天课程结束后，我们都有一小时的小讲座，内容覆盖计算机知识的方方面面。
+        </p>
+        <p class="slide-text-block">
+          近距离接触程序猿。Simon老师在亚马逊工作多年，助教们也是计算机专业的学生，
+          有过自己开发项目的经历，我们安排了经验分享会，他们不仅会聊作为程序员的生活，
+          还会分享他们的升学经验和留学感悟，想了解程序猿生活的同学们可不能错过。
+        </p>
+        <p class="slide-text-block">
+          后四天，大家组队开发游戏。你们将会茶不思饭不想，一心只想码代码、修bug。
+          “我的小鸟飞不起来我感觉它好胖啊” “这个小鸟飞得好魔性啊哈哈哈哈”。
+          我们的任务除了帮你们debug，还要保证你们记得吃午饭，无限量提供零食和茶点，保证你们的能量值。
+        </p>
+        <p class="slide-text-block">
+          我们还邀请了就纽约Parsons、
+          罗德岛艺术设计学院RISD等艺术院校的设计师专门为学员们画出他们自制游戏所需要的人物形象和场景，
+          保证出品的游戏看起来就高大上！
+        </p>
+      </div>
+      <div class="section">
+        <div class="slide container-fluid">
+          <h3 class="text-center slide-subtitle">组织者是谁</h3>
+          <p class="slide-text-block">
+            Simon老师目前在亚马逊西雅图办公室担任时装部门软件工程师，
+            专注于开发更时尚流行的网上服装购买的体验。他从11岁开始自学编程，
+            并参加各种无线电工程制作、信息学和机器人竞赛，业余时间喜欢开发手机游戏。
+          </p>
+          <p class="slide-text-block">
+            在华师附中就读高中时，曾和好友自发向学校申请资金创建机器人队，
+            并创造了学校首次参加机器人足球项目就获得广州市和广东省第一的成绩，
+            也曾参加过<a href="http://robocup.org">机器人世界杯RoboCup</a>世界赛，
+            获得银牌。
+          </p>
+        </div>
+        <div class="slide container-fluid">
+          <p class="slide-text-block">
+            水哥目前在哈佛大学攻读神经科学博士学位。华师附中机器人队创始人之一，
+            同样参加过机器人世界杯省赛和世界赛，分别获得省第一和世界杯银牌。
+          </p>
+          <p class="slide-text-block">
+            他也是广州留美学生联合会(CSUSA)的创始人，举办过多届留美学生鸡尾酒会，
+            有着丰富的留学申请指导经验。申请美国大学的时候，他以高分通过9门AP考试，
+            获得Trinity College的奖学金。他还曾经是少年棒球国家队的主力球员。
+          </p>
+        </div>
+        <div class="slide container-fluid">
+          <p class="slide-text-block">
+            利利本科就读于美国加州大学伯克利分校的计算机与电子工程系，曾在硅谷实习。
+            华师附中机器人创始人之一，参加过机器人世界杯的省赛和世界赛，获得省第一名和世界杯银牌。
+          </p>
+          <p class="slide-text-block">
+            由于学校地理环境优势，他深受硅谷文化影响。离开伯克利后，他回到广州开始创业，
+            希望把硅谷的开源文化带回来成立了东西科技，
+            组织策划过两场大型的<a href="http://gzhack.io">广州创客马拉松</a>，
+            还成立了广州Ruby on Rails技术交流小组。
+          </p>
+        </div>
+        <div class="slide container-fluid">
+          <p class="slide-text-block">
+            秋秋现就职于<a href="http://yy.com">YY语音</a>，担任软件工程师。
+            本科就读中山大学数学系，本科毕业后继续攻读中山大学计算机系硕士学位。
+            东西科技首席程序员，也是广州创客马拉松的组织者策划者之一，有着丰富的项目开发经验。
+          </p>
+          <p class="slide-text-block">
+            他有过多次Ruby on Rails的教学经验，是广州Ruby on Rails小组的主讲师。
+            他还是跆拳道黑带三段，多次获得省市比赛冠军。
+          </p>
+        </div>
+        <div class="slide container-fluid">
+          <p class="slide-text-block">
+            球球现在是普林斯顿计算机科学系的硕士生，同时还负责教普林斯顿小本科生们计算机系统入门。
+            她从初中开始学习编程，曾在高中参加过校机器人队（就是Simon老师组建的那支啦），
+            参加过世界赛，也参加过日本公开赛。大学就读于美国布朗大学，攻读计算机科学理学士学位和东亚研究文学士学位。
+          </p>
+          <p class="slide-text-block">
+            大一暑假参与学校组织的编程体验夏令营
+            <a href="http://cs.brown.edu/people/orgs/artemis/2016/index.html">The Artemis Project</a>，
+            现在是<a href="http://girlswhocode.com">Girls Who Code组织</a>的志愿者，
+            有着丰富的相关活动的组织经验和计算机教学经验。
+          </p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="slide container-fluid">
+          <h3 class="text-center slide-subtitle">往届学生作品展示</h3>
+          <h4 class="text-center slide-subtitle">多彩贪吃蛇</h4>
+          <div class="text-center">
+            <img src="https://cloud.githubusercontent.com/assets/1462400/14412646/edbc02d8-ff34-11e5-91f3-5ffe4443a589.png" width=250 />
+          </div>
+        </div>
+        <div class="slide container-fluid">
+          <h3 class="text-center slide-subtitle">往届学生作品展示</h3>
+          <h4 class="text-center slide-subtitle">Flying Tongue</h4>
+          <div class="text-center">
+            <img src="https://cloud.githubusercontent.com/assets/1462400/14412644/edbb45c8-ff34-11e5-90f0-8d8bc41fcab4.png" width=250 />
+          </div>
+        </div>
+        <div class="slide container-fluid">
+          <h3 class="text-center slide-subtitle">往届学生作品展示</h3>
+          <h4 class="text-center slide-subtitle">Stary Stary Night</h4>
+          <div class="text-center">
+            <img src="https://cloud.githubusercontent.com/assets/1462400/14412645/edbb7930-ff34-11e5-871e-b1e4703d1109.png" width=250 />
+          </div>
+        </div>
+        <div class="slide container-fluid">
+          <h3 class="text-center slide-subtitle">往届学生作品展示</h3>
+          <h4 class="text-center slide-subtitle">拯救小鸡</h4>
+          <div class="text-center">
+            <img src="https://cloud.githubusercontent.com/assets/1462400/14412643/edbb63aa-ff34-11e5-9229-e545b6d1e525.png" width=250 />
+          </div>
+        </div>
+        <div class="slide container-fluid">
+          <h3 class="text-center slide-subtitle">往届学生作品展示</h3>
+          <h4 class="text-center slide-subtitle">Flappy Witch</h4>
+          <div class="text-center">
+            <img src="https://cloud.githubusercontent.com/assets/1462400/14412647/edbcb17e-ff34-11e5-8f02-bb8384d37180.png" width=250 />
+          </div>
+        </div>
+      </div>
+      <div class="section container-fluid">
+        <h2 class="text-center slide-subtitle">想报名的同学们请长按以下二维码进群咨询！</h2>
+        <div class="text-center">
+          TODO: QR Code
+        </div>
+      </div>
+    </div>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/fullpage.js/dist/jquery.fullpage.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('#fullpage').fullpage({
+          navigation: true,
+          navigationPosition: 'right',
+          slidesNavigation: true,
+          controlArrows: false,
+          sectionsColor: ['#eff1d5', '#eff1d5', '#eff1d5', '#eff1d5', '#eff1d5', '#eff1d5', '#eff1d5', '#eff1d5']
+        });
+      });
+    </script>
+  </body>
+</html>
