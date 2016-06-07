@@ -1,0 +1,16 @@
+{
+  "name": "2016Summer",
+  "homepage": "https://github.com/Code-Girls/2016Summer",
+  "authors": [
+    "Simon Liang <simon@divby0.io>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "fullpage.js": "^2.7.9",
+    "jquery": "^1.12.3",
+    "bootstrap": "^3.3.6"
+  }
+}
