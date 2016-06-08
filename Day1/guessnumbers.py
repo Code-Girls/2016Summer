@@ -1,17 +1,16 @@
 import random
 
 numbers = []
-guesses = []
-tries = 3
-
 while(len(numbers) < 4):
     rand = random.randint(1, 9)
     if rand not in numbers:
         numbers.append(rand)
 
+tries = 3
 while(tries):
     a = 0
     b = 0
+    guesses = []
     for i in range(0,4):
         guesses.append(int(input("Input number " + str(i+1) +":")))
     if numbers == guesses:
