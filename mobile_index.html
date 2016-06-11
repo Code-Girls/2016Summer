@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,12 @@
     <title>暑假编程营招生</title>
   <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="node_modules/fullpage.js/jquery.fullPage.css" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: fangzheng-pixel;
+      src: url('assets/font.woff2');
+    }
+  </style>
   <style>
     /* http://codepen.io/dodozhang21/pen/siKtp */
 
@@ -61,7 +67,8 @@
     body {
       background: url('assets/bg.jpg') no-repeat center center fixed;
       background-size: cover;
-      color: green;
+      color: #AFDDE4;
+      font-family: fangzheng-pixel, Helvetica;
     }
 
     .arrow {
@@ -90,6 +97,65 @@
   </style>
 
   <style>
+    html {
+      font-size: 15px;
+    }
+
+    #titleSection {
+      position: relative;
+    }
+
+    #titleSection .fp-tableCell {
+      vertical-align: top;
+    }
+
+    .title-image {
+      width: 84%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .title-text {
+      position: absolute;
+      left: 15%;
+      font-size: 2rem;
+      letter-spacing: 0.33rem;
+      color: #0f0;
+    }
+
+    .title-text-1 {
+      top: 2.5rem;
+    }
+
+    .title-text-2 {
+      top: 5rem;
+    }
+
+    .title-seven-days {
+      position: absolute;
+      top: 6rem;
+      right: 15%;
+      font-size: 6rem;
+      letter-spacing: 0.67rem;
+      color: #0f0;
+    }
+
+    .title-nav {
+      list-style-type: none;
+      padding: 0;
+      position: absolute;
+      bottom: 15%;
+      left: 7%;
+    }
+
+    .title-nav-item {
+      margin: 0.5rem 0 0.5rem 0;
+      padding: 0.5rem 0 0.5rem 1rem;
+      border: 1px dashed #0E5AD6;
+      color: #529EFA;
+      border-radius: 5px;
+    }
+
     .slide-subtitle {
       padding: 0 30px;
     }
@@ -107,10 +173,16 @@
   </head>
   <body>
     <div id="fullpage">
-      <div class="section">
-        <h3 class="text-center">你与程序员间</h3>
-        <h3 class="text-center">仅余：</h3>
-        <h1 class="text-center">7天</h1>
+      <div class="section" id="titleSection">
+        <img class="title-image" src="assets/bdround.jpg" />
+        <h3 class="title-text title-text-1">你与程序员间</h3>
+        <h3 class="title-text title-text-2">仅余：</h3>
+        <h1 class="title-seven-days">7天</h1>
+        <ul class="title-nav">
+          <li class="title-nav-item">WHAT？你对我做了什么？</li>
+          <li class="title-nav-item">幕后黑手到底是谁？？？</li>
+          <li class="title-nav-item">这就是我七天后的实力吗？！</li>
+        </ul>
         <div class="arrow bounce"></div>
       </div>
       <div class="section">
