@@ -1,0 +1,24 @@
+{
+  "name": "summer-2016",
+  "version": "1.0.0",
+  "description": "2016 summer camp # 招生网页部署方法",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Code-Girls/2016Summer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Code-Girls/2016Summer/issues"
+  },
+  "homepage": "https://github.com/Code-Girls/2016Summer#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "fullpage.js": "^2.8.1",
+    "jquery": "^1.12.3"
+  }
+}
