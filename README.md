@@ -3,8 +3,8 @@
 # 招生网页部署方法
 
 ```
-npm install bower -g
-bower install
+npm install
+npm start
 ```
 
-然后把bower_components文件夹和index.html丢一起
+然后把`assets`文件夹、`vendor`文件夹和index.html丢一起

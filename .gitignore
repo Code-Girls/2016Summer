@@ -35,5 +35,8 @@ node_modules
 # bower
 bower_components
 
+# vendor
+vendor/
+
 # Mac
 .DS_Store
