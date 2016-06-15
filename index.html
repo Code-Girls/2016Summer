@@ -70,7 +70,7 @@
     #section2,
     #section3,
     #section4 {
-      padding-top: 70px;
+      padding-top: 5%;
     }
 
     #titleSection {
@@ -103,8 +103,7 @@
       color: #0f0;
     }
 
-    .title-nav,
-    .section-nav {
+    .title-nav {
       list-style-type: none;
       padding: 0;
       position: absolute;
@@ -112,21 +111,20 @@
     }
 
     .title-nav {
-      bottom: 10%;
-    }
-
-    .section-nav {
       bottom: 5%;
     }
 
-    .title-nav-item,
-    .section-nav-item {
+    .title-nav-item {
       margin: 0.5rem 0 0.5rem 0;
       padding: 0.5rem 0 0.5rem 1rem;
       border: 1px dashed #0E5AD6;
       color: #529EFA;
       border-radius: 5px;
       background-color: #11211A;
+    }
+
+    .title-nav-item a {
+      text-decoration: none;
     }
 
     .slide-subtitle,
@@ -153,17 +151,17 @@
   </head>
   <body>
     <div id="fullpage">
-      <div class="section" id="titleSection">
+      <div class="section" id="titleSection" data-anchor="title">
         <h3 class="title-text title-text-1">你与程序员间</h3>
         <h3 class="title-text title-text-2">仅余：</h3>
         <h1 class="title-seven-days">7天</h1>
-        <ul class="title-nav">
-          <li class="title-nav-item">WHAT？你对我做了什么？</li>
-          <li class="title-nav-item">幕后黑手到底是谁？？？</li>
+        <ul class="title-nav" id="titlenav">
+          <li class="title-nav-item" data-menuanchor="whatdo"><a href="#whatdo">WHAT？你对我做了什么？</a></li>
+          <li class="title-nav-item" data-menuanchor="whois"><a href="#whois">幕后黑手到底是谁？？？</a></li>
           <li class="title-nav-item">这就是我七天后的实力吗？！</li>
         </ul>
       </div>
-      <div class="section" id="section2">
+      <div class="section" id="section2" data-anchor="whatdo">
         <h2 class="slide-subtitle">
           七日后
           <br />
@@ -199,7 +197,7 @@
           <li class="section-nav-item">这就是我七天后的实力吗？！</li>
         </ul> -->
       </div>
-      <div class="section" id="section3">
+      <div class="section" id="section3" data-anchor="somestuff">
         <div class="slide container-fluid" id="section3a">
           <h2 class="slide-subtitle">在夏令营中我们会对你颅内软体进行升级</h2>
           <ul class="task-list">
@@ -240,7 +238,7 @@
           </div>
         </div>
       </div>
-      <div class="section container-fluid" id="section4">
+      <div class="section container-fluid" id="section4" data-anchor="details">
         <h2 class="slide-subtitle">
           夏令营集训时间：
           <br />
@@ -267,7 +265,7 @@
           保证出品的游戏看起来就高大上！
         </p>
       </div>
-      <div class="section">
+      <div class="section" data-anchor="whois">
         <div class="slide container-fluid">
           <h3 class="text-center slide-subtitle">组织者是谁</h3>
           <p class="text-center">
@@ -383,7 +381,9 @@
           navigation: true,
           navigationPosition: 'right',
           slidesNavigation: true,
-          controlArrows: false
+          controlArrows: false,
+          menu: '#titlenav',
+          anchors: ['title', 'whatdo', 'somestuff', 'details', 'whois']
         });
       });
     </script>
