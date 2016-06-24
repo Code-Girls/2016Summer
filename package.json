@@ -1,17 +1,14 @@
 {
-  "name": "summer-2016",
+  "name": "hacker-camp-page",
   "version": "1.0.0",
-  "description": "2016 summer camp # 招生网页部署方法",
+  "description": "HackerCamp Page",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run vendor && npm run serve",
     "serve": "http-server . -p 5000",
-    "vendor": "mkdir -p vendor/js && mkdir -p vendor/css && npm run jquery && npm run fullpage && npm run bootstrap",
+    "vendor": "mkdir -p vendor/js && mkdir -p vendor/css && npm run jquery && npm run bootstrap",
     "jquery": "cp ./node_modules/jquery/dist/jquery.min.js ./vendor/js",
-    "fullpage": "npm run fullpagejs && npm run fullpagecss",
-    "fullpagejs": "cp ./node_modules/fullpage.js/jquery.fullPage.js ./vendor/js",
-    "fullpagecss": "cp ./node_modules/fullpage.js/jquery.fullPage.css ./vendor/css",
     "bootstrap": "npm run bootstrapjs && npm run bootstrapcss",
     "bootstrapjs": "cp ./node_modules/bootstrap/dist/js/bootstrap.min.js ./vendor/js",
     "bootstrapcss": "cp ./node_modules/bootstrap/dist/css/bootstrap.min.css ./vendor/css"
@@ -28,7 +25,6 @@
   "homepage": "https://github.com/Code-Girls/2016Summer#readme",
   "dependencies": {
     "bootstrap": "^3.3.6",
-    "fullpage.js": "^2.8.1",
     "jquery": "^1.12.3"
   },
   "devDependencies": {

@@ -1,328 +1,148 @@
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>暑假编程营招生</title>
-  <link href="vendor/css/bootstrap.min.css" rel="stylesheet">
-  <link href="vendor/css/jquery.fullPage.css" rel="stylesheet">
-  <style>
-    @font-face {
-      font-family: fangzheng-pixel;
-      src: url('assets/font.woff2');
-    }
-
-    body {
-      background: url('assets/bg.png') no-repeat center center fixed;
-      background-size: cover;
-      color: #AFDDE4;
-      font-family: fangzheng-pixel, Helvetica;
-      position: relative;
-    }
-
-    body:before {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 51px;
-      top: 0;
-      background: url('assets/top-frame.png') no-repeat center top fixed;
-      background-size: contain;
-      z-index: 1;
-    }
-
-    body:after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 49px;
-      bottom: 0;
-      background: url('assets/bottom-frame.png') no-repeat center bottom fixed;
-      background-size: contain;
-    }
-
-    #fp-nav ul li a span,
-    .fp-slidesNav ul li a span {
-      background: white;
-    }
-  </style>
-
-  <style>
-    html {
-      font-size: 15px;
-    }
-
-    #titleSection,
-    #section2,
-    #section3,
-    #section4 {
-      position: relative;
-    }
-
-    #titleSection .fp-tableCell,
-    #section4 .fp-tableCell {
-      vertical-align: top;
-    }
-
-    #section4 {
-      padding-top: 5%;
-    }
-
-    #titleSection {
-      background: url('assets/bdround.jpg') no-repeat center top;
-      background-size: cover;
-    }
-
-    .title-text {
-      position: absolute;
-      left: 8%;
-      font-size: 2rem;
-      letter-spacing: 0.2rem;
-      color: #0f0;
-    }
-
-    .title-text-1 {
-      top: 25%;
-    }
-
-    .title-seven-days {
-      position: absolute;
-      top: 10%;
-      right: 10%;
-      font-size: 3.5rem;
-      letter-spacing: 0.2rem;
-      color: #0f0;
-    }
-
-    .title-nav {
-      list-style-type: none;
-      padding: 0;
-      position: absolute;
-      left: 7%;
-    }
-
-    .title-nav {
-      bottom: 5%;
-    }
-
-    .title-nav-item {
-      margin: 0.5rem 0 0.5rem 0;
-      padding: 0.5rem;
-      border: 1px dashed #0E5AD6;
-      color: #529EFA;
-      border-radius: 5px;
-      background-color: #11211A;
-    }
-
-    .title-nav-item a {
-      text-decoration: none;
-    }
-
-    .highlight-bullet {
-      background-color: #11211A;
-      border: 1px solid #1DBE12;
-      padding: 5px;
-      margin: 0 2rem;
-    }
-
-    .slide-video {
-      margin: 2rem auto;
-      display: block;
-    }
-
-    .task-list {
-      padding: 0 2rem 0 3rem;
-      font-size: 1.1rem;
-    }
-
-    .task-list-item {
-      margin-bottom: 1.2rem;
-    }
-
-    .section-text {
-      margin: 0 2rem;
-      font-size: 1.25rem;
-      line-height: 2.5rem;
-    }
-
-    .section-highlight {
-      margin: 2rem 2rem;
-      font-size: 2rem;
-      color: #0f0;
-    }
-
-    .section-title {
-      margin: 3rem 2rem;
-    }
-
-    b {
-      color: #0f0;
-    }
-
-    .section-image {
-      display: block;
-      width: 60%;
-      height: auto;
-      margin: 1.5rem auto;
-    }
-
-  </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HackerCamp</title>
+    <link href="vendor/css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
-    <div id="fullpage">
-      <div class="section" id="titleSection">
-        <h1 class="title-seven-days">你够格吗？</h1>
-        <h3 class="title-text title-text-1">敢不敢和我们一起玩转时下最火的AI和VR？</h3>
-        <ul class="title-nav">
-          <li class="title-nav-item">你是否有勇气打开新世界的大门？</li>
-          <li class="title-nav-item">你是否有能力做出最优秀的作品？</li>
-          <li class="title-nav-item">你是否有资格与名校高材生为伍？</li>
-        </ul>
-      </div>
-      <div class="section" id="section2">
-        <p class="section-text">
-          你敢挑战普林斯顿计算机系课程吗？<br />
-          你敢凭借一副机械键盘<br />
-          写遍天下代码吗？<br />
-          今天我们给你带来了超浓缩版<br />
-          普林斯顿计算机入门课<br />
+    <h2>你够格吗？</h2>
+    <h2>敢不敢来HackerCamp和我们一起玩转时下最火的AI和VR？</h2>
+    <p>
+      <img src="assets/wordcloud.svg" />
+    </p>
+    <p>
+      你敢挑战普林斯顿计算机系的课程吗？<br />
+      你敢凭借一副机械键盘，写遍天下代码吗？<br />
+      今天我们给你带来了超浓缩版的<br />
+      普林斯顿计算机入门课<br />
+      等你来挑战！<br />
+      <br />
+      你有入读世界级名校的野心吗？<br />
+      普林斯顿、哈佛、麻省，你有信心攀登吗？<br />
+      我们能为你的申请加油助力<br />
+      只要做出了足够精彩的作品集
+    </p>
+    <h3>什么是HackerCamp？</h3>
+    <p>
+      结合美国顶级理工名校教学宗旨，引进文理学院式的小班教学概念，<!--
+      -->HackerCamp将在这个暑假召集起一批最痴迷科技的高中生，<!--
+      -->与几位来自美国顶尖计算机学科系的导师一起，通过轻松生动的课堂互动，<!--
+      -->探讨当下计算机领域最炙手可热的核心技术。
+    </p>
+    <p>
+      HackerCamp将会涵盖计算机学科中的几个前沿方向，向学生讲解最新的技术，并引导学生实践与创新，<!--
+      -->完成属于自己的作品：它可以是一款有趣的HTML5页游、一个创新的智能家居设备、<!--
+      -->甚至是一部能听懂人说话的无人机…
+    </p>
+    <h3>我能在HackerCamp学到什么？</h3>
+    <ul>
+      <li>
+        <img src="assets/Python-logo.svg" />
+        <h4>Python编程</h4>
+        <p>
+          Python是许多美国大学计算机入门课程的授课编程语言之一，简单易懂，并且有很强的延展性。<!--
+          -->在人工智能、图像处理，Web开发甚至是嵌入式开发都有Python的身影。<!--
+          -->HackerCamp将全程使用Python教学，让学员体验Python在计算机学科不同方向中的应用，<!--
+          -->用一门语言闯天下。
         </p>
-
-        <p class="section-highlight">
-          等你来挑战！
+      </li>
+      <li>
+        <img src="assets/Alphago-logo.png" />
+        <h4>机器学习/人工智能</h4>
+        <p>
+          人工智能（Artificial Intelligence）与机器学习（Machine Learning）<!--
+          -->都是近几年最流行的研究方向。智能化时代即将到来，<!--
+          -->再不了解一下人工智能背后的原理恐怕就要被时代抛弃了。<!--
+          -->HackerCamp导师将介绍几种常用的机器学习方法，<!--
+          -->带领学员用Python语言编写人工智能程序，让电脑可以和你对话、识别写的字。
         </p>
-
-        <!-- <ul class="section-nav">
-          <li class="section-nav-item">WHAT？你对我做了什么？</li>
-          <li class="section-nav-item">幕后黑手到底是谁？？？</li>
-          <li class="section-nav-item">这就是我七天后的实力吗？！</li>
-        </ul> -->
-      </div>
-      <div class="section" id="section3">
-        <p class="section-text">
-          你有入读世界级名校的野心吗？<br />
-          普林斯顿、哈佛、麻省<br />
-          你有信心攀登吗？<br />
-          我们能为你的申请加油助力<br />
-          只要做出了足够精彩的作品集<br />
+      </li>
+      <li>
+        <img src="assets/Photoshop-logo.svg" />
+        <h4>图像处理/机器视觉</h4>
+        <p>
+          美图秀秀玩得转不够酷，写得出自己的美图秀秀程序才叫酷！<!--
+          -->HackerCamp将会介绍图像处理背后的矩阵运算原理，写出自己的美颜相机。<!--
+          -->不过，小脸P得再美丽，机器人也能轻松认出你。<!--
+          -->机器人是如何做到的？来HackerCamp就知道了！
         </p>
-
-        <p class="section-highlight">
-          名校属于你！
+      </li>
+      <li>
+        <img src="assets/drone.png" />
+        <h4>智能硬件/机器人/无人机</h4>
+        <p>
+          机器人是怎么造出来的？我们从二进制讲起，带领学生了解逻辑电路和传感器的工作原理。
+          HackerCamp的导师将会带领学员用Raspberry Pi搭建机器人、制作智能家居硬件。
+          最后还有无人机比赛，看谁写的程序能让无人机飞得最酷炫。
         </p>
-      </div>
-      <div class="section container-fluid" id="section4">
-        <h3 class="section-title">
-          夏令营时间与日程
-          <br />
-          2016年7月30日—8月5日
-        </h3>
-
-        <ul class="task-list">
-          <li class="task-list-item">
-            Day 1 - Python编程
-          </li>
-          <li class="task-list-item">
-            Day 2 - HTML5页游
-          </li>
-          <li class="task-list-item">
-            Day 3 - 网络与互联网
-          </li>
-          <li class="task-list-item">
-            Day 4 - 图像处理与识别
-          </li>
-          <li class="task-list-item">
-            Day 5 - 智能硬件与机器人
-          </li>
-          <li class="task-list-item">
-            Day 6 - 人工智能AI
-          </li>
-          <li class="task-list-item">
-            Day 7 - 人机交互和无人机
-          </li>
-        </ul>
-      </div>
-      <div class="section">
-        <div class="slide container-fluid">
-          <h3 class="text-center slide-subtitle">夏令营里的酷炫科技</h3>
-          <iframe class="slide-video" src="http://player.youku.com/embed/XMTYxNjE5ODUzNg==" frameborder=0 allowfullscreen></iframe>
-          <p class="text-center slide-subtitle">脚踏机玩Flappy Bird</p>
-        </div>
-        <div class="slide container-fluid">
-          <h3 class="text-center slide-subtitle">夏令营里的酷炫科技</h3>
-          <iframe class="slide-video" src="http://player.youku.com/embed/XMTYxNjY2NDkxNg==" frameborder=0 allowfullscreen></iframe>
-          <p class="text-center slide-subtitle">自行飞翔和空翻的无人机</p>
-        </div>
-        <div class="slide container-fluid">
-          <h3 class="text-center slide-subtitle">夏令营里的酷炫科技</h3>
-          <iframe class="slide-video" src="http://player.youku.com/embed/XMTYxNjY0MzMyOA==" frameborder=0 allowfullscreen></iframe>
-          <p class="text-center slide-subtitle">识别手写的数字</p>
-        </div>
-        <div class="slide container-fluid">
-          <h3 class="text-center slide-subtitle">夏令营里的酷炫科技</h3>
-          <iframe class="slide-video" src="http://player.youku.com/embed/XMTYxNzcyNjU2NA==" frameborder=0 allowfullscreen></iframe>
-          <p class="text-center slide-subtitle">跟随人脸的无人机</p>
-        </div>
-      </div>
-      <div class="section" id="introSection">
-        <div class="slide container-fluid">
-          <img class="section-image" src="assets/simon.jpg" />
-          <p class="section-text">
-            Simon老师，<b>亚马逊</b>西雅图办公室时装部门软件工程师；
-            高中时曾创建机器人队，并创造了学校首次参加机器人足球项目就获得<b>广州市和广东省第一</b>的成绩；
-            曾参加过<b>机器人世界杯RoboCup获得银牌。</b>
-          </p>
-        </div>
-        <div class="slide container-fluid">
-          <img class="section-image" src="assets/qiu.jpg" />
-          <p class="section-text">
-            球球，<b>普林斯顿计算机科学系的硕士生</b>，
-            也是普林斯顿的<b>计算机系统入门讲师</b>；
-            本科就读于美国<b>布朗大学</b>，
-            攻读计算机科学理学士学位和东亚研究文学士学位；
-            <a href="http://girlswhocode.com">Girls Who Code组织</a>的志愿者，
-            有着丰富的相关活动的组织经验和计算机教学经验。
-          </p>
-        </div>
-        <div class="slide container-fluid">
-          <div class="section-image"></div>
-          <p class="section-text">
-            利利，本科就读于<b>美国加州大学伯克利分校</b>的计算机与电子工程系，曾在<b>硅谷</b>实习；
-            参加过机器人世界杯的省赛和世界赛，获得<b>省第一名和世界杯银牌</b>；
-            回国后成立东西科技，是东西科技的<b>创始人和CEO</b>；
-            组织策划过两场大型的<b>广州创客马拉松</b>，还成立了广州Ruby on Rails技术交流小组。
-          </p>
-        </div>
-        <div class="slide container-fluid">
-          <img class="section-image" src="assets/zeqiu.jpg" />
-          <p class="section-text">
-            秋秋，YY语音软件工程师；
-            本科就读中山大学数学系，本科毕业后继续攻读<b>中山大学计算机系硕士</b>学位；
-            东西科技<b>首席程序员</b>，有着丰富的项目开发经验；
-            有过多次Ruby on Rails的教学经验，是广州Ruby on Rails小组的主讲师。
-          </p>
-        </div>
-      </div>
-      <div class="section container-fluid">
-        <!--<h2 class="text-center slide-subtitle">想报名的同学们请长按以下二维码进群咨询！</h2>-->
-        <div class="text-center">
-          TODO: QR Code
-        </div>
-      </div>
-    </div>
+      </li>
+    </ul>
+    <h3>日程安排</h3>
+    <ul>
+      <li>
+        <img src="" />
+        <h4>Day 1</h4>
+        <p>Python编程</p>
+      </li>
+      <li>
+        <img src="" />
+        <h4>Day 2</h4>
+        <p>HTML5页游</p>
+      </li>
+      <li>
+        <img src="" />
+        <h4>Day 3</h4>
+        <p>网络与互联网</p>
+      </li>
+      <li>
+        <img src="" />
+        <h4>Day 4</h4>
+        <p>图像处理与识别</p>
+      </li>
+      <li>
+        <img src="" />
+        <h4>Day 5</h4>
+        <p>智能硬件与机器人</p>
+      </li>
+      <li>
+        <img src="" />
+        <h4>Day 6</h4>
+        <p>人工智能AI</p>
+      </li>
+      <li>
+        <img src="" />
+        <h4>Day 7</h4>
+        <p>人机交互和无人机</p>
+      </li>
+    </ul>
+    <h3>HackerCamp导师</h3>
+    <ul>
+      <li>
+        <img src="assets/qiu.jpg" />
+        <h4>球球</h4>
+        <p>
+          邱慧莲老师，昵称球球，普林斯顿计算机科学系的硕士生，也是普林斯顿的计算机系统入门讲师；<!--
+          -->本科就读于美国布朗大学，攻读计算机科学理学士学位和东亚研究文学士学位；<!--
+          -->Girls Who Code组织的志愿者，有着丰富的相关活动的组织经验和计算机教学经验。
+        </p>
+      </li>
+      <li>
+        <img src="assets/simon.jpg" />
+        <h4>Simon</h4>
+        <p>
+          梁皓然Simon老师，美国亚马逊西雅图办公室时装部门软件工程师；<!--
+          -->大学在美国Rose-Hulman理工学院潜心修读计算机科学，并钻研机器视觉和计算机图像处理；<!--
+          -->高中时曾创建机器人队，并创造了学校首次参加机器人足球项目就获得广州市和广东省第一的成绩；<!--
+          -->曾参加过机器人世界杯RoboCup获得银牌。
+        </p>
+      </li>
+    </ul>
+    <h3>TODO: 扫二维码</h3>
     <script src="vendor/js/jquery.min.js"></script>
     <script src="vendor/js/bootstrap.min.js"></script>
-    <script src="vendor/js/jquery.fullPage.js"></script>
-    <script>
-      $(document).ready(function() {
-        $('#fullpage').fullpage({
-          navigation: true,
-          navigationPosition: 'right',
-          slidesNavigation: true,
-          controlArrows: false
-        });
-      });
-    </script>
   </body>
 </html>
