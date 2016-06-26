@@ -38,7 +38,7 @@ h4 {
   margin: 1rem auto;
   height: 0.3rem;
   width: 0.7rem;
-  background-color: #2d343e;
+  background-color: #617da3;
   position: relative;
 }
 
@@ -49,7 +49,7 @@ h4 {
   left: -2rem;
   width: 1.5rem;
   height: 1px;
-  background-color: #2d343e;
+  background-color: #617da3;
 }
 
 .opening-division:after {
@@ -59,11 +59,12 @@ h4 {
   left: 1.2rem;
   width: 1.5rem;
   height: 1px;
-  background-color: #2d343e;
+  background-color: #617da3;
 }
 
 .section-title {
   width: 100%;
+  margin: 2rem auto;
 }
 
 .section-title span {
@@ -165,7 +166,17 @@ h4 {
 }
 
 .calendar-list {
+  position: relative;
+}
 
+.calendar-list:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background-color: #aaa;
+  left: 50%;
+  top: 0;
 }
 
 .teacher-list {
