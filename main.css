@@ -121,6 +121,7 @@ h4 {
 .calendar-list,
 .teacher-list {
   list-style-type: none;
+  padding: 0;
 }
 
 .knowledge-list li {
@@ -234,7 +235,7 @@ h4 {
 
 .calendar-item {
   position: relative;
-  padding: 1rem;
+  padding: 0.3rem;
 }
 
 .calendar-desc {
@@ -244,7 +245,7 @@ h4 {
 .calendar-item .round-bullet {
   position: absolute;
   left: calc(50% - 1.25rem);
-  top: 30px;
+  top: 18px;
 }
 
 .odd-day .calendar-desc {
@@ -258,11 +259,11 @@ h4 {
 }
 
 .teacher-list .round-bullet {
-  width: 6.5rem;
-  height: 6.5rem;
+  width: 4.5rem;
+  height: 4.5rem;
 }
 
 .teacher-list .bullet-image {
-  width: 6.5rem;
+  width: 4.5rem;
   height: auto;
 }
