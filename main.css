@@ -125,8 +125,12 @@ h4 {
 }
 
 .knowledge-list li {
-  margin: 2rem auto;
+  margin: 2rem 0;
   display: table;
+}
+
+.knowledge-list li div.col-xs-10 {
+  padding-right: 0; /* a strange bug where the text won't push to the right */
 }
 
 .round-bullet {
@@ -235,7 +239,7 @@ h4 {
 
 .calendar-item {
   position: relative;
-  padding: 0.3rem;
+  padding: 0.05rem;
 }
 
 .calendar-desc {
@@ -245,7 +249,7 @@ h4 {
 .calendar-item .round-bullet {
   position: absolute;
   left: calc(50% - 1.25rem);
-  top: 18px;
+  top: 12px;
 }
 
 .odd-day .calendar-desc {
