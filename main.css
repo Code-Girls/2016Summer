@@ -5,7 +5,8 @@ body {
 
 h2,
 h3,
-h4 {
+h4,
+b {
   color: #2d343e;
 }
 
@@ -273,4 +274,8 @@ h4 {
 .teacher-list .bullet-image {
   width: 4.5rem;
   height: auto;
+}
+
+b {
+  font-weight: bold;
 }
