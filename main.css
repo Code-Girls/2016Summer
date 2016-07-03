@@ -279,3 +279,10 @@ b {
 b {
   font-weight: bold;
 }
+
+.show-image {
+  display: block;
+  width: 90%;
+  height: auto;
+  margin: 1.5rem auto;
+}
