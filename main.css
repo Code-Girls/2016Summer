@@ -1,6 +1,7 @@
 html,
 body {
   font-size: 16px;
+  line-height: 32px;
 }
 
 h2,
@@ -8,6 +9,7 @@ h3,
 h4,
 b {
   color: #2d343e;
+  font-weight: bolder;
 }
 
 .title {
