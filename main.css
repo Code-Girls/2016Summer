@@ -15,13 +15,11 @@ b {
 .title {
   font-size: 2.2rem;
   width: 100%;
-  text-align: center;
 }
 
 .subtitle {
-  font-size: 1.3rem;
-  width: 80%;
-  text-align: center;
+  font-size: 1.1rem;
+  width: 100%;
   margin: 0.5rem auto;
 }
 
@@ -29,7 +27,7 @@ b {
   width: 100%;
   display: block;
   height: auto;
-  margin: 3rem auto 1rem auto;
+  margin: 3rem auto 3.5rem auto;
 }
 
 .opening {
@@ -41,7 +39,7 @@ b {
 }
 
 .opening-division {
-  margin: 1rem auto;
+  margin: 1.5rem auto;
   height: 0.3rem;
   width: 0.7rem;
   background-color: #617da3;
@@ -220,6 +218,11 @@ b {
 .simon-image {
   left: -3px;
   top: -1px;
+}
+
+.unknown-image {
+  left: -3px;
+  top: -2px;
 }
 
 .calendar-time {
