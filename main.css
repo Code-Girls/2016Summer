@@ -4,12 +4,23 @@ body {
   line-height: 32px;
 }
 
+h1,
 h2,
 h3,
 h4,
 b {
-  color: #2d343e;
   font-weight: bolder;
+}
+
+h1,
+h2,
+h3 {
+  color: #dd5d6c;
+}
+
+h4,
+b {
+  color: #223f67;
 }
 
 .title {
@@ -18,6 +29,7 @@ b {
 }
 
 .subtitle {
+  color: #223f67;
   font-size: 1.1rem;
   width: 100%;
   margin: 0.5rem auto;
