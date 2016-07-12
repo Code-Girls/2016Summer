@@ -150,8 +150,8 @@ b {
 }
 
 .round-bullet {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
   overflow: hidden;
   border-radius: 50%;
   border: 3px double #aaa;
@@ -269,7 +269,7 @@ b {
 
 .calendar-item .round-bullet {
   position: absolute;
-  left: calc(50% - 1.25rem);
+  left: calc(50% - 1.75rem);
   top: 12px;
 }
 
